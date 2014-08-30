@@ -18,6 +18,7 @@
 		"mockery/mockery": "0.7.*"
 	},
 	"autoload": {
-		"psr-4": { "Fuel\\Alias\\": "src/" }
+		"psr-4": { "Fuel\\Alias\\": "src/" },
+		"files": [ "src/functions.php" ]
 	}
 }

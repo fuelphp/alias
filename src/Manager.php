@@ -91,7 +91,7 @@ class Manager
 		{
 			$class = $this->aliases[$alias];
 
-			if (class_exists($class, true))
+			if (object_exists($class, true))
 			{
 				return $class;
 			}
@@ -227,7 +227,7 @@ class Manager
 				$class = $from.'\\'.$alias;
 				$this->resolving[] = $class;
 
-				if (class_exists($class, true))
+				if (object_exists($class, true))
 				{
 					array_pop($this->resolving);
 

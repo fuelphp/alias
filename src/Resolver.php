@@ -80,7 +80,7 @@ class Resolver
 		}
 
 		// Check wether the class exists
-		if ( ! $class or ! class_exists($class, true))
+		if ( ! $class or ! object_exists($class, true))
 		{
 			return false;
 		}
