@@ -19,6 +19,7 @@
 		"codeception/mockery-module": "dev-master"
 	},
 	"autoload": {
-		"psr-4": { "Fuel\\Alias\\": "src/" }
+		"psr-4": { "Fuel\\Alias\\": "src/" },
+		"files": [ "src/functions.php" ]
 	}
 }
